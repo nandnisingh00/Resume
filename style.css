@@ -1,0 +1,353 @@
+/* =========================
+   BASIC RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    background: #e9e9e9;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111;
+    line-height: 1.35;
+}
+
+
+/* =========================
+   RESUME PAGE
+========================= */
+
+.resume {
+    width: 210mm;
+    min-height: 297mm;
+
+    margin: 25px auto;
+    padding: 18px 22px;
+
+    background: #ffffff;
+
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    text-align: center;
+    border-bottom: 3px solid #4c6fa8;
+    padding-bottom: 12px;
+}
+
+.header h1 {
+    font-size: 27px;
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+
+.subtitle {
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.subtitle span {
+    margin: 0 7px;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 7px;
+
+    font-size: 14px;
+}
+
+.contact a {
+    color: #1d578e;
+    text-decoration: underline;
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+.section {
+    margin-top: 18px;
+}
+
+.section h2 {
+    color: #315b91;
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.section-line {
+    height: 2px;
+    background: #5276a8;
+    width: 100%;
+    margin-bottom: 7px;
+}
+
+
+/* =========================
+   PROFESSIONAL SUMMARY
+========================= */
+
+.summary {
+    font-size: 15px;
+    text-align: justify;
+}
+
+
+/* =========================
+   TECHNICAL SKILLS
+========================= */
+
+.skills p {
+    font-size: 14.5px;
+    margin-bottom: 2px;
+}
+
+.skills strong {
+    font-weight: 700;
+}
+
+
+/* =========================
+   PROJECTS
+========================= */
+
+.project {
+    margin-bottom: 18px;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.project-header h3 {
+    font-size: 16px;
+    font-weight: 700;
+    flex: 1;
+}
+
+.date {
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+.demo {
+    display: inline-block;
+
+    margin-left: 7px;
+    padding: 1px 5px;
+
+    color: #286399;
+    border: 2px solid #286399;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+.demo:hover {
+    background: #286399;
+    color: white;
+}
+
+.project ul {
+    margin-top: 3px;
+    padding-left: 24px;
+}
+
+.project li {
+    font-size: 14.5px;
+    margin-bottom: 2px;
+    padding-left: 2px;
+}
+
+
+/* =========================
+   EDUCATION
+========================= */
+
+.education-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.education-header h3 {
+    font-size: 15.5px;
+    font-weight: 700;
+}
+
+.education-list {
+    margin-top: 4px;
+    padding-left: 24px;
+}
+
+.education-list li {
+    font-size: 14.5px;
+}
+
+
+/* =========================
+   CERTIFICATIONS
+========================= */
+
+.certifications {
+    padding-left: 24px;
+}
+
+.certifications li {
+    font-size: 14.5px;
+    margin-bottom: 3px;
+}
+
+.certifications a {
+    color: #1d578e;
+    text-decoration: underline;
+}
+
+
+/* =========================
+   SOFT SKILLS
+========================= */
+
+.soft-skills {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 14.5px;
+}
+
+.soft-skills b {
+    font-size: 15px;
+}
+
+
+/* =========================
+   LINKS
+========================= */
+
+a {
+    transition: 0.2s ease;
+}
+
+
+/* =========================
+   PRINT SETTINGS
+========================= */
+
+@page {
+    size: A4;
+    margin: 0;
+}
+
+@media print {
+
+    body {
+        background: white;
+    }
+
+    .resume {
+        width: 210mm;
+        min-height: 297mm;
+
+        margin: 0;
+        padding: 18px 22px;
+
+        box-shadow: none;
+    }
+
+    .demo {
+        color: #286399;
+        background: transparent;
+    }
+
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media screen and (max-width: 850px) {
+
+    body {
+        background: white;
+    }
+
+    .resume {
+        width: 100%;
+        min-height: auto;
+
+        margin: 0;
+        padding: 25px 20px;
+
+        box-shadow: none;
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .subtitle {
+        font-size: 15px;
+    }
+
+    .contact {
+        font-size: 13px;
+    }
+
+    .section h2 {
+        font-size: 19px;
+    }
+
+    .project-header,
+    .education-header {
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .date {
+        font-size: 13px;
+    }
+
+    .soft-skills {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 7px;
+    }
+
+    .soft-skills b {
+        display: none;
+    }
+
+}
